@@ -1,0 +1,231 @@
+:root {
+  --teal: rgb(64, 162, 162);
+  --lightTeal: rgb(21, 237, 237);
+  --text-white: white;
+  --text-soft: rgb(223, 221, 221);
+  --soft-black: rgb(35, 35, 35);
+}
+.mogra-regular {
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  min-height: 100vh;
+  color: var(--text-white);
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  color: var(--teal);
+  font-family: "Mogra", system-ui;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.header-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.header-links li {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+.header-links li a {
+  color: var(--text-white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.header-links li a.active {
+  position: relative;
+  text-decoration: none;
+  color: var(--teal);
+  padding: 5px;
+}
+.header-links li a:hover {
+  color: var(--teal);
+}
+.header-links li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 10%;
+  border-bottom: 2px solid var(--teal);
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.socials {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+.socials i {
+  cursor: pointer;
+  transition: color 0.3s;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+.socials *:hover {
+  color: var(--teal);
+}
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-white);
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: var(--teal);
+}
+.copyright {
+  font-size: 1rem;
+  padding: 5px;
+  color: var(--text-soft);
+}
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  flex-grow: 1;
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.shortDesc {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+.desc {
+  width: 65%;
+  padding: 10px;
+}
+.desc h2 {
+  font-size: 3rem;
+  color: var(--teal);
+  font-family: "Poppins";
+  margin: 20px 0;
+}
+.desc p {
+  padding: 20px 20px 20px 0;
+  font-family: "poppins";
+  width: 80%;
+}
+.banner-image-container {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-image-container img {
+  width: 400px;
+  transform: translateY(-70px);
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: top;
+  border-radius: 50px;
+}
+.hobbies-section {
+  padding: 30px;
+}
+.section-title {
+  text-align: center;
+  font-family: Poppins;
+  color: var(--teal);
+  font-size: 3rem;
+  margin: 30px 0;
+}
+.hobbies-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 30px;
+}
+.hobbies-container figure {
+  width: 80%;
+  text-align: center;
+  padding: 0 0 25px;
+  background: var(--soft-black);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.hobbies-container figure img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.hobbies-container figure figcaption {
+  font-size: 1.1rem;
+  font-family: "poppins";
+  color: var(--lightTeal);
+}
+.daily-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.daily-schedule table {
+  border-radius: 10px;
+  width: 80%;
+  overflow: hidden;
+}
+.daily-schedule table tr:nth-child(odd) {
+  background: var(--soft-black);
+  color: var(--text-white);
+}
+.daily-schedule table tr:nth-child(even) {
+  background: var(--teal);
+  color: black;
+}
+.daily-schedule table thead tr:nth-child(1) {
+  background: var(--teal);
+  color: black;
+  font-weight: bold;
+  font-family: "poppins";
+  font-size: 1.3rem;
+}
+.daily-schedule table td {
+  padding: 15px 20px;
+  font-family: "poppins";
+}
