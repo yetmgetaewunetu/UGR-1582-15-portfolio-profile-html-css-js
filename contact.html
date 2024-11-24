@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yetmgeta Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/contact.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -25,17 +24,26 @@
       <nav>
         <span class="logo">Yetmgeta</span>
         <ul class="header-links">
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a class="active" href="/contact.html">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a class="active" href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <aside>
+      <ul class="side-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a class="active" href="./services.html">Services</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </aside>
     <main>
       <section class="container">
-        <form action="">
+        <form action="/">
           <h1 class="page-title">Contact Me</h1>
           <input
             type="text"
@@ -49,7 +57,7 @@
           />
           <input type="text" placeholder="Email" class="half-width-inputs" />
           <input placeholder="Phone" type="text" class="half-width-inputs" />
-          <select type="text" title="service type">
+          <select title="service type">
             <option value="select a service" selected>select a service</option>
             <option value="Web App">Web App</option>
             <option value="Web App">UI/UX Design</option>
@@ -63,31 +71,32 @@
             id="message"
             placeholder="message..."
           ></textarea>
-          <button class="form-submit-btn">Send</button>
+          <button type="submit" class="form-submit-btn">Send</button>
         </form>
         <article class="myInfo">
+          <h3>Direct Contact at:</h3>
           <span>
             <i class="ri-phone-fill"></i>
-            <div>
+            <span>
               <span>Phone</span>
               <span class="detail">+251984093418</span>
-            </div>
+            </span>
           </span>
           <span>
             <i class="ri-mail-fill"></i>
-            <div>
+            <span>
               <span>Email</span>
               <span class="detail">yetmgetae@gmail.com</span>
-            </div>
+            </span>
           </span>
           <span>
             <i class="ri-map-pin-2-fill"></i>
-            <div>
+            <span>
               <span>Location</span>
               <span class="detail"
                 >Addis Ababa institute of Technology(AAiT), Ethiopia</span
               >
-            </div>
+            </span>
           </span>
         </article>
       </section>
@@ -101,16 +110,19 @@
       </ul>
       <ul class="footer-links">
         <li>
-          <a href="">services</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="">portfolio</a>
+          <a href="./services.html">services</a>
         </li>
         <li>
-          <a href="">about</a>
+          <a href="./portfolio.html">portfolio</a>
         </li>
         <li>
-          <a href="">contact</a>
+          <a href="./about.html">about</a>
+        </li>
+        <li>
+          <a href="./contact.html">contact</a>
         </li>
       </ul>
       <span class="copyright"> &copy;Copyright reserved </span>

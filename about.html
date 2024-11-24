@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yetmgeta Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/about.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -25,17 +24,26 @@
       <nav>
         <span class="logo">Yetmgeta</span>
         <ul class="header-links">
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a class="active" href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <aside>
+      <ul class="side-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a class="active" href="./services.html">Services</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </aside>
     <h1 class="page-title">About Me</h1>
     <main>
-      <section class="shortDesc">
+      <div class="shortDesc">
         <article class="desc">
           <h2>Yetmgeta Ewunetu</h2>
           <p>
@@ -47,49 +55,47 @@
             problem solving skill.
           </p>
         </article>
-        <article class="banner-image-container">
-          <img src="assets/images/yetmgeta.png" alt="yetmgeta ewunetu image" />
-        </article>
-      </section>
+        <div class="banner-image-container">
+          <img src="./images/yetmgeta.png" alt="yetmgeta ewunetu image" />
+        </div>
+      </div>
       <section class="hobbies-section">
         <h2 class="section-title">Hobbies</h2>
-        <article class="hobbies-container">
+        <div class="hobbies-container">
           <figure>
-            <img
-              src="./assets/images/betekrstiyan.png"
-              alt="orthodox church image"
-            />
+            <img src="./images/betekrstiyan.png" alt="orthodox church image" />
             <figcaption>spending my time at these peaceful place</figcaption>
           </figure>
           <figure>
-            <img src="./assets/images/coding.png" alt="coding image" />
+            <img src="./images/coding.png" alt="coding image" />
             <figcaption>Coding all the time</figcaption>
           </figure>
           <figure>
-            <img src="./assets/images/tennis.png" alt="table tennis image" />
+            <img src="./images/tennis.png" alt="table tennis image" />
             <figcaption>table tennis</figcaption>
           </figure>
           <figure>
-            <img src="./assets/images/crypto.png" alt="crypto image" />
+            <img src="./images/crypto.png" alt="crypto image" />
             <figcaption>Cryptography</figcaption>
           </figure>
           <figure>
-            <img src="./assets/images/football.png" alt="soccer image" />
+            <img src="./images/football.png" alt="soccer image" />
             <figcaption>football</figcaption>
           </figure>
           <figure>
-            <img src="./assets/images/pool.png" alt="billards image" />
+            <img src="./images/pool.png" alt="billards image" />
             <figcaption>Billards</figcaption>
           </figure>
-        </article>
+          <audio src="./audio/yilma.mp3" controls></audio>
+        </div>
       </section>
       <section class="daily-schedule">
         <h2 class="section-title">Daily Time Management</h2>
         <table>
           <thead>
             <tr>
-              <td>Activity</td>
-              <td>Duration</td>
+              <th>Activity</th>
+              <th>Duration</th>
             </tr>
           </thead>
           <tbody>
@@ -126,16 +132,19 @@
       </ul>
       <ul class="footer-links">
         <li>
-          <a href="">services</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="">portfolio</a>
+          <a href="./services.html">services</a>
         </li>
         <li>
-          <a href="">about</a>
+          <a href="./portfolio.html">portfolio</a>
         </li>
         <li>
-          <a href="">contact</a>
+          <a href="./about.html">about</a>
+        </li>
+        <li>
+          <a href="./contact.html">contact</a>
         </li>
       </ul>
       <span class="copyright"> &copy;Copyright reserved </span>

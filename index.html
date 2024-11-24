@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yetmgeta Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -25,14 +24,23 @@
       <nav>
         <span class="logo">Yetmgeta</span>
         <ul class="header-links">
-          <li><a class="active" href="/home">Home</a></li>
+          <li><a class="active" href="/">Home</a></li>
           <li><a href="./services.html">Services</a></li>
-          <li><a href=".portfolio.html">Portfolio</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <aside>
+      <ul class="side-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
     <main class="hero">
       <article class="short-explanation">
         <span>Fullstack Developer</span>
@@ -42,24 +50,25 @@
           I am a 3rd year software engineering student and a fullstack developer
           with satisfying problem solving skill.
         </p>
-        <button class="cv-download-btn">
-          <a href="./assets/pdf_files/Yetmgeta-Ewunetu-Resume.pdf" download
-            >Download CV</a
-          >
-        </button>
+        <a
+          href="./pdf_files/Yetmgeta-Ewunetu-Resume.pdf"
+          class="cv-download-btn"
+          download
+          >Download CV</a
+        >
       </article>
-      <article style="position: relative">
-        <article class="image-container">
+      <div title="image container">
+        <div class="image-container">
           <div class="rotating-border"></div>
-          <article class="image-container">
+          <div class="image-container">
             <img
-              src="./assets/images/yetmgeta.png"
+              src="./images/yetmgeta.png"
               alt="Yetmgeta Ewunetu  image"
               class="image"
             />
-          </article>
-        </article>
-      </article>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <ul class="socials">
@@ -70,16 +79,19 @@
       </ul>
       <ul class="footer-links">
         <li>
-          <a href="">services</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="">portfolio</a>
+          <a href="./services.html">services</a>
         </li>
         <li>
-          <a href="">about</a>
+          <a href="./portfolio.html">portfolio</a>
         </li>
         <li>
-          <a href="">contact</a>
+          <a href="./about.html">about</a>
+        </li>
+        <li>
+          <a href="./contact.html">contact</a>
         </li>
       </ul>
       <span class="copyright"> &copy;Copyright reserved </span>
