@@ -11,34 +11,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mogra&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Indie+Flower&family=Mogra&family=Outfit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mogra&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../assets/styles/portfolio.css" />
   </head>
   <body>
     <header>
       <nav>
         <span class="logo">Yetmgeta</span>
+        <i class="ri-menu-line" id="nav-control" onclick="toggleNavbar()"></i>
         <ul class="header-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./services.html">Services</a></li>
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link" href="./services.html">Services</a></li>
           <li><a class="active" href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a class="link" href="./about.html">About</a></li>
+          <li><a class="link" href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <aside>
+    <aside id="aside">
+      <i class="ri-close-line" id="nav-close" onclick="toggleNavbar()"></i>
       <ul class="side-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a class="active" href="./services.html">Services</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="link" href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </aside>
     <main>
@@ -47,22 +46,22 @@
         <h2 class="section-title">Languages and FrameWorks</h2>
         <div class="languages-container">
           <div class="card">
-            <img src="./images/python.png" alt="" />
+            <i class="fa-brands fa-python"></i>
           </div>
           <div class="card">
-            <img src="./images/java.png" alt="" />
+            <i class="fa-brands fa-java"></i>
+            </div>
+          <div class="card">
+            <i class="fa-brands fa-js"></i>
           </div>
           <div class="card">
-            <img src="./images/js.png" alt="" />
-          </div>
-          <div class="card">
-            <img src="./images/node.png" alt="" />
+            <i class="fa-brands fa-node"></i>
           </div>
           <div class="card">
             <img src="./images/express.png" alt="" />
           </div>
           <div class="card">
-            <img src="./images/react.png" alt="" />
+            <i class="fa-brands fa-react"></i>
           </div>
           <div class="card">
             <img src="./images/next.png" alt="" />
@@ -74,95 +73,105 @@
       </section>
       <section class="works">
         <h2>My Works</h2>
-        <div class="single-work-container">
-          <article class="single-work-des">
-            <h3 class="number">01</h3>
-            <h3 class="work-title">Restaurant Website</h3>
-            <p class="work-des">
-              This Restaurant website was built while i was learning html and
-              css. It's inspired by <a href="/">lama dev</a>
+        <button class="prevbtn" id="edu-prev" title="go to previous">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <button class="nextbtn" id="edu-next" title="go to Next">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+        <div class="carousel">
 
-              <span class="built-with">Html, Css, JS</span>
-            </p>
-            <div class="btn-container">
-              <a
-                title="go to site"
-                class="arrowBtn"
-                href="https://yetmgetaewunetu.github.io/Restaurant-website-design/"
-                ><i class="ri-arrow-right-up-line"></i
-              ></a>
-              <a
-                title="github link"
-                class="git"
-                href="https://github.com/yetmgetaewunetu/Restaurant-website-design/"
-              >
-                <i class="ri-github-fill"></i>
-              </a>
-            </div>
-          </article>
-          <video src="videos/restaurant.webm" controls autoplay></video>
-        </div>
-
-        <div class="single-work-container">
-          <article class="single-work-des">
-            <h3 class="number">02</h3>
-            <h3 class="work-title">Netflix Clone</h3>
-            <p class="work-des">
-              Netflix Clone is a great project i have built while i was learning
-              react. It's built Fully with react and
-              <a href="tmdb.com">tmdb</a> for the contents.
-
-              <br />
-              <span class="built-with">Reactjs</span>
-            </p>
-            <div class="btn-container">
-              <a
-                title="go to site"
-                class="arrowBtn"
-                href="https://yetmgetaewunetu.github.io/Netflix-clone/"
-                ><i class="ri-arrow-right-up-line"></i
-              ></a>
-              <a
-                title="github link"
-                class="git"
-                href="https://github.com/yetmgetaewunetu/Netflix-clone/"
-              >
-                <i class="ri-github-fill"></i>
-              </a>
-            </div>
-          </article>
-          <video src="videos/netflix.webm" controls autoplay></video>
-        </div>
-
-        <div class="single-work-container">
-          <article class="single-work-des">
-            <h3 class="number">03</h3>
-            <h3 class="work-title">Simple TODO list app</h3>
-            <p>
-              Simple todo list app is built for learning purpose. It's built
-              with html, css and vanilla js. it uses localstorage api to
-              maintain previous records. <br />
-              <span class="built-with">Html, Css, JS</span>
-            </p>
-            <div class="btn-container">
-              <a
-                title="go to site"
-                class="arrowBtn"
-                href="https://yetmgetaewunetu.github.io/html-css-js-mini-projects/todo/"
-                ><i class="ri-arrow-right-up-line"></i
-              ></a>
-              <a
-                title="github link"
-                class="git"
-                href="https://github.com/yetmgetaewunetu/html-css-js-mini-projects/todo"
-              >
-                <i class="ri-github-fill"></i>
-              </a>
-            </div>
-          </article>
-          <video src="videos/tod.webm" controls autoplay></video>
-        </div>
-      </section>
+          <div class="single-work-container">
+            <article class="single-work-des">
+              <h3 class="number">01</h3>
+              <h3 class="work-title">Restaurant Website</h3>
+              <p class="work-des">
+                This Restaurant website was built while i was learning html and
+                css. It's inspired by <a href="/">lama dev</a>
+  
+                <span class="built-with">Html, Css, JS</span>
+              </p>
+              <div class="btn-container">
+                <a
+                  title="go to site"
+                  class="arrowBtn"
+                  href="https://yetmgetaewunetu.github.io/Restaurant-website-design/"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></a>
+                <a
+                  title="github link"
+                  class="git"
+                  href="https://github.com/yetmgetaewunetu/Restaurant-website-design/"
+                >
+                  <i class="ri-github-fill"></i>
+                </a>
+              </div>
+            </article>
+            <video src="videos/restaurant.webm" controls autoplay></video>
+          </div>
+  
+          <div class="single-work-container">
+            <article class="single-work-des">
+              <h3 class="number">02</h3>
+              <h3 class="work-title">Netflix Clone</h3>
+              <p class="work-des">
+                Netflix Clone is a great project i have built while i was learning
+                react. It's built Fully with react and
+                <a href="tmdb.com">tmdb</a> for the contents.
+  
+                <br />
+                <span class="built-with">Reactjs</span>
+              </p>
+              <div class="btn-container">
+                <a
+                  title="go to site"
+                  class="arrowBtn"
+                  href="https://yetmgetaewunetu.github.io/Netflix-clone/"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></a>
+                <a
+                  title="github link"
+                  class="git"
+                  href="https://github.com/yetmgetaewunetu/Netflix-clone/"
+                >
+                  <i class="ri-github-fill"></i>
+                </a>
+              </div>
+            </article>
+            <video src="videos/netflix.webm" controls autoplay></video>
+          </div>
+  
+          <div class="single-work-container">
+            <article class="single-work-des">
+              <h3 class="number">03</h3>
+              <h3 class="work-title">Simple TODO list app</h3>
+              <p>
+                Simple todo list app is built for learning purpose. It's built
+                with html, css and vanilla js. it uses localstorage api to
+                maintain previous records. <br />
+                <span class="built-with">Html, Css, JS</span>
+              </p>
+              <div class="btn-container">
+                <a
+                  title="go to site"
+                  class="arrowBtn"
+                  href="https://yetmgetaewunetu.github.io/html-css-js-mini-projects/todo/"
+                  ><i class="ri-arrow-right-up-line"></i
+                ></a>
+                <a
+                  title="github link"
+                  class="git"
+                  href="https://github.com/yetmgetaewunetu/html-css-js-mini-projects/todo"
+                >
+                  <i class="ri-github-fill"></i>
+                </a>
+              </div>
+            </article>
+            <video src="videos/tod.webm" controls autoplay></video>
+          </div>
+        </section>
+      </div>
+        </main>
     </main>
     <footer>
       <ul class="socials">
@@ -190,5 +199,7 @@
       </ul>
       <span class="copyright"> &copy;Copyright reserved </span>
     </footer>
+   <script src="../assets/scripts/main.js"></script>
+   <script src="https://kit.fontawesome.com/b7c7417ce9.js" crossorigin="anonymous"></script>
   </body>
 </html>

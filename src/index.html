@@ -11,28 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mogra&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Indie+Flower&family=Mogra&family=Outfit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mogra&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
   </head>
   <body>
     <header>
       <nav>
         <span class="logo">Yetmgeta</span>
+        <i class="ri-menu-line" id="nav-control" onclick="toggleNavbar()"></i>
         <ul class="header-links">
           <li><a class="active" href="/">Home</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a class="link" href="./services.html">Services</a></li>
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="./about.html">About</a></li>
+          <li><a class="link" href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <aside>
+    <aside id="aside">
+      <i class="ri-close-line" id="nav-close" onclick="toggleNavbar()"></i>
       <ul class="side-links">
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="services.html">Services</a></li>
@@ -43,9 +42,8 @@
     </aside>
     <main class="hero">
       <article class="short-explanation">
-        <span>Fullstack Developer</span>
-        <h2>Hello I'm</h2>
-        <h1>Yetmgeta Ewunetu</h1>
+        <h2>Hello!</h2>
+        <h1>I am Yetmgeta Ewunetu</h1>
         <p>
           I am a 3rd year software engineering student and a fullstack developer
           with satisfying problem solving skill.
@@ -59,7 +57,7 @@
       </article>
       <div title="image container">
         <div class="image-container">
-          <div class="rotating-border"></div>
+          <!-- <div class="rotating-border"></div> -->
           <div class="image-container">
             <img
               src="./images/yetmgeta.png"
@@ -96,5 +94,6 @@
       </ul>
       <span class="copyright"> &copy;Copyright reserved </span>
     </footer>
+    <script src="../assets/scripts/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,264 @@
+:root {
+  --primary: #6c98f6;
+  --text-strong: #f7faf9;
+  --text-weak: #c1c3c6;
+  --stroke-strong: #2a3f6c;
+  --stroke-weak: #333535;
+
+  --padding-header: 25px 0;
+  --padding-container: 0 25px 10px;
+  --white-space: 90;
+  --container-margin: 150px;
+  --h1: 77px;
+  --h2: 58px;
+  --h1-small: 37px;
+  --main-text: 20px;
+  --main-text-small: 17px;
+
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outfit {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+html {
+  min-height: 100%;
+  color: var(--text-strong);
+  font-family: var(--font-family);
+  background: #001418;
+  overflow-x: hidden;
+}
+body {
+  padding: var(--padding-container);
+}
+header {
+  padding: var(--padding-header);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Outfit";
+  color: var(--primary);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-strong);
+}
+.header-links {
+  display: none;
+}
+
+#nav-control {
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: color 0.3s ease-in-out;
+}
+#nav-control:hover {
+  color: var(--primary);
+}
+
+aside {
+  position: absolute;
+  display: none;
+  top: 20px;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+  background: var(--stroke-weak);
+  padding: 10px 50px 10px 10px;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside i {
+  font-size: xx-large;
+  margin: 0 0 35px;
+}
+.show-nav {
+  display: block;
+}
+
+footer {
+  padding: var(--padding-header);
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials i {
+  width: 22px;
+  height: 22px;
+  transform: scale(1.3);
+  transition: color 0.3s ease-in-out;
+}
+
+.socials i:hover {
+  color: var(--primary);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  width: 80%;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.page-title {
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  color: var(--text-weak);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main {
+  flex: 1;
+}
+form {
+  display: flex;
+  background: var(--stroke-weak);
+  gap: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 50px 10px;
+  max-width: 500px;
+}
+input,
+select,
+textarea {
+  background: rgb(73, 73, 73);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+}
+.half-width-inputs {
+  width: 46%;
+}
+select,
+textarea {
+  width: calc(92% + 10px);
+}
+main {
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.myInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.myInfo i {
+  background: var(--stroke-weak);
+  padding: 6px;
+  color: var(--primary);
+  font-size: large;
+}
+.myInfo span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.myInfo > span > span {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.form-submit-btn {
+  justify-self: flex-end;
+  align-self: flex-end;
+  padding: 10px 35px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: var(--stroke-strong);
+  color: white;
+
+  font-size: 1.2rem;
+}
+.myInfo > span > span > span:nth-child(2) {
+  color: var(--primary);
+}
+@media screen and (min-width: 1024px) {
+  .show-nav,
+  #nav-control {
+    display: none !important;
+  }
+  .header-links {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .link {
+    position: relative;
+    transition: all 0.3s;
+  }
+  .link::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--primary);
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    transition: all 0.3s;
+  }
+  .active {
+    color: var(--primary);
+  }
+  .link:hover::after {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .socials i {
+    font-size: 28px;
+  }
+  .footer-links a {
+    font-size: var(--main-text);
+  }
+  .container {
+    flex-direction: row;
+  }
+}
